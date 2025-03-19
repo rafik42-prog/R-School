@@ -1,0 +1,158 @@
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css");
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #dfe9f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: width 0.2s linear;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+ul li a i {
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: lightblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.details p {
+    margin-bottom: 10px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Table Section Styles */
+.table-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
