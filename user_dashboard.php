@@ -1,0 +1,233 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'user') {
+    header("Location: login.php");
+    exit();
+}
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Espace Etudiant - R SCHOOL</title>
+    <link rel="stylesheet" href="admin.css">
+    <!--font awesome link-->
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="logo">
+                    <img src="photo_6032782189076268073_y.jpg" alt="">
+                    <span class="nav-item">R SCHOOL</span>
+                   
+                </a>
+                
+            </li>
+        
+            <li><a href="user_dashboard.php">
+                <i class='bx bx-home'></i>
+                <span class="nav-item">Accueil</span>               
+            </a>
+        
+        </li>
+            <li><a href="profil.php">
+              
+                <i class='bx bxs-user'></i>
+
+                <span class="nav-item">Profil</span>
+                
+
+            </a></li>
+            <li><a href="cours.php"> 
+                
+                <i class='bx bx-book-open bx-tada' ></i>
+                <span class="nav-item">Cours en Ligne</span>
+                
+            </a></li>
+            <li><a href="user_tests.php"> 
+                
+                
+                <span class="nav-item">Test de niveaux</span>
+                
+            </a></li>
+        
+            
+        <li><a href="#" class="logout">
+            <i class='bx bx-log-out'></i>
+            <a href="logout.php"> Logout</a>
+    </a></li>
+    
+
+
+
+        </ul>
+    </nav>
+    <div class ="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Accueil</span>
+                
+            </div>
+            <div class="user--info">
+                <div class="searh--box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Search"/>
+            </div>
+            <img src="photo.jpeg" alt=""></img>
+            </div>
+        </div>
+        <div class="card--container">
+        <h3 class="main--title"> Matiere </h3>
+        <div class="card--wrapper">
+          <div class="payment--card" > 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Francais</span>
+            </div>
+
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Englais </span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Arabe </span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Spaniol</span>
+            </div>
+            
+              </div>
+           </div>
+         </div>
+      </div>
+      <div class="card--container">
+        <h3 class="main--title"> Niveau </h3>
+        <div class="card--wrapper">
+          <div class="payment--card" > 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> A1</span>
+            </div>
+
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> A2 </span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> B1</span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> B2</span>
+            </div>
+            
+              </div>
+           </div>
+         </div>
+      </div>
+      <div class="card--container">
+        <h3 class="main--title"> Salles </h3>
+        <div class="card--wrapper">
+          <div class="payment--card" > 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> S1</span>
+            </div>
+
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> s2 </span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> s3</span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> s4</span>
+            </div>
+            
+              </div>
+           </div>
+         </div>
+      </div>
+      <div class="card--container">
+        <h3 class="main--title"> Enseignant </h3>
+        <div class="card--wrapper">
+          <div class="payment--card" > 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Francais </span>
+            </div>
+
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Englais </span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Arabe </span>
+            </div>
+            
+              </div>
+           </div>
+           <div class="payment--card"> 
+            <div class="card--header">
+            <div class="amount">
+                <span class="title"> Spaniol</span>
+            </div>
+            
+              </div>
+           </div>
+         </div>
+      </div>
+    </div>
+   
+</body>
+</html>
+

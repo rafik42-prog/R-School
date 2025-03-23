@@ -1,0 +1,115 @@
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css");
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+body{
+    background: #dfe9f5;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 30px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+.logo img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    color: rgb(85, 83,85);
+    display: table;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+}
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+
+}
+a:hover{
+    background: #eee;
+}
+nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+.logout{
+    position: absolute;
+    bottom: -5;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    height: 50vh;
+    display: grid;
+    justify-content: center ;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  table {
+    width: 150%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid black
+    ;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: darkcyan;
+  }
+  

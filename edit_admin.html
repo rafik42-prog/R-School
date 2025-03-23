@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Modifier Administrateur - R SCHOOL</title>
+    <link rel="stylesheet" href="adm.css">
+</head>
+<body>
+<h1>Modifier Administrateur</h1>
+<form action="edit_admin.php" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="<?php echo $admin['id']; ?>">
+    <input type="hidden" name="current_photo" value="<?php echo $admin['photo']; ?>">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" value="<?php echo htmlspecialchars($admin['nom']); ?>" required>
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom" value="<?php echo htmlspecialchars($admin['prenom']); ?>" required>
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" name="grade" value="<?php echo htmlspecialchars($admin['grade']); ?>" required>
+    <label for="photo">Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+    <button type="submit" name="edit_admin">Mettre à jour</button>
+</form>
+</body>
+</html>

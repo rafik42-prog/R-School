@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ajouter un Apprenant - R SCHOOL</title>
+    <link rel="stylesheet" href="adm.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="administrateur.php"><i class='bx bxs-school'></i><span class="nav-item">Administration</span></a></li>
+        <li><a href="enseignant.php"><i class='bx bxs-user-plus'></i><span class="nav-item">Enseignant</span></a></li>
+        <li><a href="apprenant.php"><i class='bx bxs-graduation'></i><span class="nav-item">Apprenant</span></a></li>
+        <li><a href="logout.php" class="logout"><i class='bx bx-log-out'></i><span class="nav-item">Logout</span></a></li>
+    </ul>
+</nav>
+<div class="main--content">
+    <h1>Ajouter un Apprenant</h1>
+    <form action="process_add_student.php" method="POST">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="classe">Classe:</label>
+        <input type="text" id="classe" name="classe" required><br>
+        <label for="classe">date_naissance</label>
+        <input type="text" id="date_naissance" name="date_naissance" required><br>
+        <label for="classe">adresse</label>
+        <input type="text" id="adresse" name="adresse" required><br>
+        <button type="submit">Ajouter</button>
+    </form>
+</div>
+</body>
+</html>
